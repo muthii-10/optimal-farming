@@ -68,7 +68,7 @@ ON scf.field_ID = fmf.field_ID;
   ```
   data = pd.read_sql_query(text(sql_query), engine.connect())
   ```
-## **2. Data Cleaning**
+### **2. Data Cleaning**
 
 - Removed duplicate `Field_ID` columns.  
 - Fixed column swaps and spelling mistakes in crop names.  
@@ -78,7 +78,7 @@ ON scf.field_ID = fmf.field_ID;
 
 ---
 
-## 3. Defining High Performance
+### 3. Defining High Performance
 
 To identify **top-performing farms**, a threshold was computed for each crop based on yield distribution:
 
@@ -93,7 +93,7 @@ Farms with `Standard_yield ≥ Threshold` were classified as **top performers**.
 
 ---
 
-## 4. Key Insights
+## Key Insights
 
 ### Climatic & Geographic Factors
 
@@ -121,7 +121,7 @@ Farms with `Standard_yield ≥ Threshold` were classified as **top performers**.
 
 ---
 
-## 5. Summary Table
+## Summary Table
 
 | Crop | Altitude (m) | Rainfall (mm) | Night Temp | Day Temp | Soil Type | Soil pH | Fertility | Pollution Tolerance |
 |-------|---------------|----------------|-------------|------------|------------|-----------|-------------|----------------|
@@ -136,7 +136,7 @@ Farms with `Standard_yield ≥ Threshold` were classified as **top performers**.
 
 ---
 
-## 6. Visualizations
+## Visualizations
 
 The analysis includes:
 - **Boxplots** — Distribution of climatic and soil variables per crop  
@@ -147,7 +147,7 @@ These visualizations highlight environmental preferences and variability across 
 
 ---
 
-## 7. Conclusion
+## Conclusion
 
 This analysis provides actionable insights for **sustainable, data-driven crop planning** in Maji Ndogo:
 
@@ -160,20 +160,17 @@ Understanding these relationships helps guide **optimal land use**, **improve yi
 
 ---
 
-## 8. Requirements
+## Requirements
 
 Install dependencies:
 ```bash
 pip install pandas sqlalchemy matplotlib seaborn
 ```  
 
-## 9. Author
+## Author
 
 **Victor Muthii Munene**  
-📧 **mv.munene01@gmail.com**
+**mv.munene01@gmail.com**
 
 ---
 
-## 10. License
-
-This project is licensed under the **[MIT License]**.
